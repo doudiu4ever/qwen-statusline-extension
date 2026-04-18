@@ -1,0 +1,7 @@
+{
+  "name": "my-statusline",
+  "version": "1.0.0",
+  "description": "自定义状态栏，显示 git 分支、token 用量和缓存统计",
+  "commands": "commands",
+  "author": "chengy (@doudiu4ever)"
+}
