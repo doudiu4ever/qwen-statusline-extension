@@ -10,13 +10,7 @@
 ## 安装
 
 ```bash
-qwen extensions install https://github.com/doudiu4ever/qwen
-```
-
-或者从本地安装：
-
-```bash
-qwen extensions install /path/to/qwen/extensions/my-statusline
+qwen extensions install https://github.com/doudiu4ever/qwen-statusline-extension
 ```
 
 ## 使用
