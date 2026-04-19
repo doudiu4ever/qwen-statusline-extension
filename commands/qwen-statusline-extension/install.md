@@ -23,13 +23,22 @@ command -v jq
    macOS: brew install jq
 ```
 
-### 2. 找到脚本源位置
+### 2. 读取当前 settings.json 配置
 
-按以下优先级查找 `qwen-statusline.sh`：
-1. 扩展目录：`<extension-path>/qwen-statusline.sh`
-2. 用户配置目录：`~/.qwen/qwen-statusline.sh`（如果已存在则覆盖）
+使用 `read_file` 读取 `~/.qwen/settings.json`。
 
-### 3. 复制脚本到用户目录
+### 3. 备份原有配置
+
+检查 `ui.statusLine` 是否存在：
+
+**如果 `ui.statusLine` 已存在**：
+- 将原有配置保存到 `~/.qwen/statusline.config.backup` 文件
+- 告诉用户：`⚠️ 发现原有状态栏配置，已备份到 ~/.qwen/statusline.config.backup`
+
+**如果 `ui.statusLine` 不存在**：
+- 无需备份，告诉用户：`✅ 未发现原有状态栏配置`
+
+### 4. 复制脚本到用户目录
 
 使用 `run_shell_command` 执行：
 
@@ -38,13 +47,10 @@ cp <source-path> ~/.qwen/qwen-statusline.sh
 chmod +x ~/.qwen/qwen-statusline.sh
 ```
 
-### 4. 读取并修改 settings.json
+### 5. 修改 settings.json
 
-**文件路径**: `~/.qwen/settings.json`
+使用 `edit` 或 `write_file` 添加/更新 `ui.statusLine`：
 
-使用 `read_file` 读取现有配置，然后使用 `edit` 或 `write_file` 添加配置：
-
-**如果文件不存在**，创建：
 ```json
 {
   "ui": {
@@ -56,19 +62,9 @@ chmod +x ~/.qwen/qwen-statusline.sh
 }
 ```
 
-**如果文件存在**，添加/更新 `ui.statusLine`：
-```json
-{
-  "ui": {
-    "statusLine": {
-      "type": "command",
-      "command": "bash ~/.qwen/qwen-statusline.sh"
-    }
-  }
-}
-```
+**注意**：保留 `settings.json` 中的其他配置。
 
-### 5. 确认安装完成
+### 6. 确认安装完成
 
 告诉用户：
 ```
@@ -83,6 +79,6 @@ chmod +x ~/.qwen/qwen-statusline.sh
 
 ## 注意事项
 
-- 修改 `settings.json` 前先读取现有配置，不要覆盖其他设置
-- 如果 `ui` 已存在，只添加/更新 `statusLine`
-- 建议备份原配置（可选）
+- 必须先读取 settings.json，根据是否有原有配置决定是否需要备份
+- 备份文件只在首次备份时创建，不要覆盖已有的备份
+- 修改 settings.json 时保留其他配置
