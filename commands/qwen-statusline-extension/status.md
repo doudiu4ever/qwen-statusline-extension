@@ -13,7 +13,7 @@ description: 查看状态栏安装状态
 使用 `run_shell_command` 执行：
 
 ```bash
-ls -la ~/.qwen/statusline.sh 2>/dev/null && echo "EXISTS" || echo "NOT_EXISTS"
+ls -la ~/.qwen/qwen-statusline.sh 2>/dev/null && echo "EXISTS" || echo "NOT_EXISTS"
 ```
 
 ### 2. 读取 settings.json
@@ -28,7 +28,7 @@ ls -la ~/.qwen/statusline.sh 2>/dev/null && echo "EXISTS" || echo "NOT_EXISTS"
 ```
 ✅ Statusline 已安装
 
-📍 脚本位置：~/.qwen/statusline.sh
+📍 脚本位置：~/.qwen/qwen-statusline.sh
 ⚙️  配置状态：settings.json 中已配置 ui.statusLine
 
 📊 显示效果:

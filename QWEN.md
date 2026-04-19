@@ -23,7 +23,7 @@ qwen extensions install https://github.com/doudiu4ever/qwen-statusline-extension
 
 这会：
 1. 检查依赖（`jq`）
-2. 复制 `statusline.sh` 到 `~/.qwen/statusline.sh`
+2. 复制 `qwen-statusline.sh` 到 `~/.qwen/qwen-statusline.sh`
 3. 修改 `~/.qwen/settings.json` 添加配置
 4. 设置脚本执行权限
 
@@ -35,7 +35,7 @@ qwen extensions install https://github.com/doudiu4ever/qwen-statusline-extension
 
 这会：
 1. 从 `settings.json` 移除状态栏配置
-2. 删除 `~/.qwen/statusline.sh` 脚本
+2. 删除 `~/.qwen/qwen-statusline.sh` 脚本
 
 ### 查看状态
 

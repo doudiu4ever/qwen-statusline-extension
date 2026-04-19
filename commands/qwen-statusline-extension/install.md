@@ -25,17 +25,17 @@ command -v jq
 
 ### 2. 找到脚本源位置
 
-按以下优先级查找 `statusline.sh`：
-1. 扩展目录：`<extension-path>/statusline.sh`
-2. 用户配置目录：`~/.qwen/statusline.sh`（如果已存在则覆盖）
+按以下优先级查找 `qwen-statusline.sh`：
+1. 扩展目录：`<extension-path>/qwen-statusline.sh`
+2. 用户配置目录：`~/.qwen/qwen-statusline.sh`（如果已存在则覆盖）
 
 ### 3. 复制脚本到用户目录
 
 使用 `run_shell_command` 执行：
 
 ```bash
-cp <source-path> ~/.qwen/statusline.sh
-chmod +x ~/.qwen/statusline.sh
+cp <source-path> ~/.qwen/qwen-statusline.sh
+chmod +x ~/.qwen/qwen-statusline.sh
 ```
 
 ### 4. 读取并修改 settings.json
@@ -50,7 +50,7 @@ chmod +x ~/.qwen/statusline.sh
   "ui": {
     "statusLine": {
       "type": "command",
-      "command": "bash ~/.qwen/statusline.sh"
+      "command": "bash ~/.qwen/qwen-statusline.sh"
     }
   }
 }
@@ -62,7 +62,7 @@ chmod +x ~/.qwen/statusline.sh
   "ui": {
     "statusLine": {
       "type": "command",
-      "command": "bash ~/.qwen/statusline.sh"
+      "command": "bash ~/.qwen/qwen-statusline.sh"
     }
   }
 }

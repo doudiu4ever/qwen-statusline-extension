@@ -87,7 +87,7 @@ qwen extensions uninstall qwen-statusline-extension
   "ui": {
     "statusLine": {
       "type": "command",
-      "command": "bash ~/.qwen/statusline.sh"
+      "command": "bash ~/.qwen/qwen-statusline.sh"
     }
   }
 }
@@ -100,9 +100,9 @@ qwen extensions uninstall qwen-statusline-extension
 ```
 qwen-statusline-extension/
 ├── qwen-extension.json      # 扩展配置
-├── statusline.sh            # 状态栏脚本
+├── qwen-statusline.sh       # 状态栏脚本
 ├── commands/                # 自定义命令
-│   └── statusline/
+│   └── qwen-statusline-extension/
 │       ├── install.md
 │       ├── uninstall.md
 │       └── status.md

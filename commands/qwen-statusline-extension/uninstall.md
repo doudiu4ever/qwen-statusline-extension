@@ -28,7 +28,7 @@ description: 卸载自定义状态栏配置
 使用 `run_shell_command` 执行：
 
 ```bash
-rm -f ~/.qwen/statusline.sh
+rm -f ~/.qwen/qwen-statusline.sh
 ```
 
 ### 4. 确认卸载完成
