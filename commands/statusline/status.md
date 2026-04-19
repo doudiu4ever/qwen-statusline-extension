@@ -34,14 +34,14 @@ ls -la ~/.qwen/statusline.sh 2>/dev/null && echo "EXISTS" || echo "NOT_EXISTS"
 📊 显示效果:
    qwen3.5-plus | qwen (main*) | Total: 1.5K | Cached: 500 (33%)
 
-🗑️  卸载：/statusline:uninstall
+🗑️  卸载：/qwen-statusline-extension:uninstall
 ```
 
 **未安装**：
 ```
 ❌ Statusline 未安装
 
-📦 安装：/statusline:install
+📦 安装：/qwen-statusline-extension:install
 ```
 
 **部分安装**（只有脚本或只有配置）：
@@ -51,5 +51,5 @@ ls -la ~/.qwen/statusline.sh 2>/dev/null && echo "EXISTS" || echo "NOT_EXISTS"
 📍 脚本：已安装 / 未安装
 ⚙️  配置：已安装 / 未安装
 
-💡 建议运行 /statusline:install 重新安装
+💡 建议运行 /qwen-statusline-extension:install 重新安装
 ```

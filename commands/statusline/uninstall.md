@@ -38,7 +38,7 @@ rm -f ~/.qwen/statusline.sh
 ✅ Statusline 卸载完成！
 
 🔄 重启 Qwen Code 后生效
-📦 如需重新安装：/statusline:install
+📦 如需重新安装：/qwen-statusline-extension:install
 ```
 
 ## 注意事项

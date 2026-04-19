@@ -1,4 +1,4 @@
-# my-statusline Extension
+# qwen-statusline-extension
 
 自定义状态栏扩展，显示：
 - 📁 当前项目目录
@@ -18,7 +18,7 @@ qwen extensions install https://github.com/doudiu4ever/qwen-statusline-extension
 ### 安装状态栏
 
 ```
-/statusline:install
+/qwen-statusline-extension:install
 ```
 
 这会：
@@ -30,7 +30,7 @@ qwen extensions install https://github.com/doudiu4ever/qwen-statusline-extension
 ### 卸载状态栏
 
 ```
-/statusline:uninstall
+/qwen-statusline-extension:uninstall
 ```
 
 这会：
@@ -40,7 +40,7 @@ qwen extensions install https://github.com/doudiu4ever/qwen-statusline-extension
 ### 查看状态
 
 ```
-/statusline:status
+/qwen-statusline-extension:status
 ```
 
 ## 显示效果
@@ -78,7 +78,7 @@ brew install jq
 ## 卸载扩展
 
 ```bash
-qwen extensions uninstall my-statusline
+qwen extensions uninstall qwen-statusline-extension
 ```
 
 ## 许可证

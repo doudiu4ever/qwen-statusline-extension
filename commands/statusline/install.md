@@ -78,7 +78,7 @@ chmod +x ~/.qwen/statusline.sh
    qwen3.5-plus | qwen (main*) | Total: 1.5K | Cached: 500 (33%)
 
 🔄 重启 Qwen Code 后生效
-🗑️  卸载：/statusline:uninstall
+🗑️  卸载：/qwen-statusline-extension:uninstall
 ```
 
 ## 注意事项
